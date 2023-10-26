@@ -19,20 +19,20 @@ public class Player
 
 
   /* your code here - accessor(s) */ 
-  public getName() {
+  public String getName() {
       return name;
   }
 
-  public getpoints() {
+  public int getPoints() {
       return points;
   }
 
   /* your code here - mutator(s) */ 
-  public setName(String newName) {
+  public void setName(String newName) {
       name = newName;
   }
 
-  public setpoints(int newpoints) {
+  public void setpoints(int newpoints) {
       name = newpoints;
   }
 }
