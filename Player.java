@@ -1,38 +1,29 @@
-/*
- * Activity 2.5.2
- * 
- * A Player class the PhraseSolverGame
- */
-import java.util.Scanner;
+public class Player {
+    private String name;
+    private int score;
 
-public class Player
-{
-  /* your code here - attributes */
-  private String name;
-  private int points;
+    public Player(String name) {
+        this.name = name;
+        this.score = 0;
+    }
 
-  /* your code here - constructor(s) */ 
-  public Player(String userName) {
-      name = userName;
-      points = 0;
-  }
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
 
-  /* your code here - accessor(s) */ 
-  public String getName() {
-      return name;
-  }
+    public int getScore() {
+        return score;
+    }
 
-  public int getPoints() {
-      return points;
-  }
+    public void setScore(int score) {
+        this.score = score;
+    }
 
-  /* your code here - mutator(s) */ 
-  public void setName(String newName) {
-      name = newName;
-  }
-
-  public void setpoints(int newpoints) {
-      name = newpoints;
-  }
+    public void addScore(int score) {
+        this.score += score;
+    }
 }
