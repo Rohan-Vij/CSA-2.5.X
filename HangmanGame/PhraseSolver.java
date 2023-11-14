@@ -55,7 +55,7 @@ public class PhraseSolver
 
             if (game.getSolvedPhrase().indexOf("_") == -1) {
                 solved = true;
-                System.out.println("Game over! You have correctly guessed the phrase:")
+                System.out.println("Game over! You have correctly guessed the phrase:");
                 System.out.print(game.getSolvedPhrase());
 
                 if (player1.getPoints() > player2.getPoints()) {
